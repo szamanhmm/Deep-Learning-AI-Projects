@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Smaller font size for app name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp" /> <!-- Smaller font size, e.g., 20sp -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visually Impaired People"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!-- Currency Detection Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/currencyDetectBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:background="@color/ic_launcher_background"> <!-- Use the ash color here -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <!-- Medium font size for this text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/currency_detect"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" /> <!-- Medium font size, e.g., 30sp -->
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Object Detection Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/objectDetectBtn"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:background="@color/white"> <!-- Use the ash color here -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <!-- Medium font size for this text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/object_detection"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" /> <!-- Medium font size, e.g., 30sp -->
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images" />
+
+    <!-- Version Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version : V1.0.0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

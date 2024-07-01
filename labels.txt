@@ -1,0 +1,16 @@
+FiveTaka
+Twenty Taka
+FiftyTaka
+OneHundredTaka
+TwoHundredTaka
+FiveHundredTaka
+ThousandTaka
+TenRupee
+No Money Detected
+TenTaka
+OneHundredRupee
+TenPakistaniRupee
+OneThousandYen
+TwoTaka
+HongKongTenDollar
+TwentyThaiBaht
